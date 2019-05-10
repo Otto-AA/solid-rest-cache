@@ -44,3 +44,40 @@
 1. Get item-url from the WebSocket change event
 2. Send change event with item-url to script
 3. In script: Mark item-url as outdated
+
+## Interface
+
+### Methods
+
+**`cachedFetch(resource, init, cacheOptions)`**
+
+*Responds with an up-to-date version of specified resource.*
+
+**resource** - String or Request object (same as for window.fetch)
+
+**init** - Object containing request options (same as for window.fetch)
+
+**cacheOptions** - CacheOptions
+
+### Types
+
+**`CacheOptions`**
+
+*Object containing following properties:*
+
+**fetch** - The fetch method which will be used for the authenticated request
+
+**allowOffline** - Boolean. If set to true, it will try to respond with a cached version when being offline (optional).
+
+**cacheStorage** - Storage. If set, all responses will be cached in this storage. Else storing is done automatically by and in the browser.
+
+
+**`Storage`**
+
+*Object containing following methods (same as localStorage):*
+
+**getItem(key: String): String**
+
+**setItem(key: String, value: String): undefined**
+
+**removeItem(key: String): undefined**
