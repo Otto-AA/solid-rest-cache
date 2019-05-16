@@ -69,7 +69,7 @@
 
 **allowOffline** - Boolean. If set to true, it will try to respond with a cached version when being offline (optional).
 
-**cacheStorage** - Storage. If set, all responses will be cached in this storage. Else storing is done automatically by and in the browser.
+**cacheStorage** - Storage. If set, all responses will be cached in this storage. Else storing is done automatically by and in the browser (optional).
 
 
 **`Storage`**

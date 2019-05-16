@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "lib": ["es2016", "webworker"],
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        "sourceMap": true,
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true
+    }
+}
